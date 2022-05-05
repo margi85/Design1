@@ -1,0 +1,51 @@
+/* .p-for-us-title {
+    font-size: 2.5em;
+    color: rgb(94, 90, 90);
+} */
+
+.container-about {
+    background-color: white;
+    width: 75%;
+    margin: 0 auto;
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+.topnav {
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    overflow: auto;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: left;
+    color: #000000;
+    text-align: center;
+    padding: 3px 16px;
+    text-decoration: none !important;
+    font-size: 1.5em;
+    width: 33%;
+    border-bottom: 3px solid rgb(199, 199, 199);
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    background-color: rgb(255, 255, 255);
+    /* direction: underline; */
+    color: black;
+    text-decoration: none;
+  }
+  
+  /* Add a color to the active/current link */
+  .topnav a.active {
+    background-color: white;
+    color: rgb(94, 90, 90);
+    font-weight: 800;
+    text-decoration: none;
+    border-bottom: 3px solid rgb(141, 141, 141);
+  }
+
+  .info-about-office1 {
+      margin-top: 1em;
+      font-size: 1.2em;
+  }

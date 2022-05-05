@@ -1,0 +1,32 @@
+
+.container-for-adrdess {
+    border-top: 1px dotted #a8a299;
+    padding: 2em 0;
+}
+
+.container-address {
+    width: 56.7em;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-rows: 1fr 1fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+      "one one two"
+      "one one three"
+      ". . ."; 
+   
+}
+
+.one {
+    grid-area: one;
+}
+
+.two {
+    grid-area: two;
+}
+
+.three {
+    grid-area: three;
+}
