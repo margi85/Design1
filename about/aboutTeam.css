@@ -1,139 +1,138 @@
- .ekip {
-    background-color: rgb(40, 37, 54);
-    width: 100%;
-    padding: 2em 10em;
-}
 
-.our-team-title {
-    font-size: 3em;
-    margin-bottom: 0.8em;
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  /* align-items: center;
+  justify-content: center; */
 } 
 
-.our-team-description {
-    width: 80%;
-    margin: 0 auto;
-    font-size: 1.1em;
+a {
+  color: #e90a2f;
 }
 
-.our-team-introduction {
-    margin: 0.8em;
-    font-size: 1.4em;
-    color: rgb(255, 166, 0);
+a:hover {
+  color: #bb1619;
+  text-decoration: none;
 }
 
-.text-team-top {
-    color: white;
-    text-align: center;
+.team .member {
+  margin-bottom: 20px;
+  overflow: hidden;
+  border-radius: 5px;
+  background: #fff;
 }
 
-/*
-ul li {
-    display: inline-block;
+.team .member .member-img {
+  position: relative;
+  overflow: hidden;
 }
 
-img {
-    width: 25%;
-    height: auto;
+.team .member .social {
+  position: absolute;
+  left: 0;
+  bottom: 30px;
+  right: 0;
+  opacity: 0;
+  transition: ease-in-out 0.3s;
+  text-align: center;
 }
 
-.border { 
-    position: relative;
-    left: 200px;
-    width: 20%;
-    background-color: white;
-    height: 250px;
-    bottom: 20em;
-} */
+.team .member:hover .social {
+  opacity: 1;
+  bottom: 15px;
+}
 
-html {
-    box-sizing: border-box;
-  }
-  
-  *, *:before, *:after {
-    box-sizing: inherit;
-  }
-  
-  .column {
-    float: left;
-    width: 25%;
-    margin-bottom: 16px;
-    padding: 0 8px;
-  }
+.team .member .social a {
+  transition: color 0.3s;
+  color: #111111;
+  margin: 0 3px;
+  padding-top: 7px;
+  border-radius: 50x;
+  width: 36px;
+  height: 36px;
+  background: #e90a2f;
+  display: inline-block;
+  transition: ease-in-out 0.3s;
+  color: #fff;
+  border-radius: 50px;
+}
 
-  .container {
-    text-align: center;
-    color: white;
-  }
+.team .member .social a:hover {
+  background: #111111;
+}
 
-  .title {
-    text-align: center;
-    color: rgb(255, 166, 0);
-    margin: 0.5em 0;
-  }
+.team .member .social i {
+  font-size: 18px;
+}
 
-  .email {
-      margin: 1em 0;
-  }
-  
-  @media screen and (max-width: 1200px) {
-    .text-team-top {
-        width: 90%;
-        margin: 0 auto;
-        font-size: 1.1em;
-    }
-    .our-team-title {
-        font-size: 2em;
-        margin-bottom: 0.8em;
-    }
-    .column {
-        float: left;
-        width: 33.3%;
-        margin-bottom: 16px;
-        padding: 0 8px;
-      }
-    /* .column {
-      width: 100%;
-      display: block;
-    } */
-  }
+.team .member .member-info {
+  padding: 25px 15px;
+  /* background: #fff; */
+}
 
-  @media screen and (max-width: 800px) {
-    .column {
-        float: left;
-        width: 50%;
-        margin-bottom: 16px;
-        padding: 0 8px;
-      }
-  }
-  
-  .card {
-    box-shadow: 0 4px 8px 0 rgba(241, 235, 235, 0.4);
-  }
-  
-  .container {
-    padding: 0 16px;
-  }
-  
-  .container::after, .row::after {
-    content: "";
-    clear: both;
-    display: table;
-  }
-  
-  .button {
-    border: none;
-    outline: 0;
-    display: inline-block;
-    padding: 8px;
-    color: white;
-    background-color: #000;
-    text-align: center;
-    cursor: pointer;
-    width: 100%;
-    margin-top: 0.5em;
-  }
-  
-  .button:hover {
-    background-color: #555;
-    color: rgb(255, 166, 0);
-  }
+.team .member .member-info h4 {
+  font-weight: 700;
+  margin-bottom: 5px;
+  font-size: 18px;
+  color: #111111;
+}
+
+.team .member .member-info span {
+  display: block;
+  font-size: 13px;
+  font-weight: 400;
+  color: #aaaaaa;
+}
+
+section {
+  padding: 60px 0;
+  overflow: hidden;
+  position: relative;
+}
+
+.section-title {
+  text-align: center;
+  padding-bottom: 30px;
+  position: relative;
+}
+
+.section-title h2{
+  font-size: 32px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  position: relative;
+}
+
+.section-title h2::after{
+  content: "";
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 3px;
+  background: #e90a2f;
+  bottom: 0;
+  left: calc(50% - 25px);
+}
+
+.section-title p {
+  margin-bottom: 0;
+}
+
+.section-bg {
+  padding: 120px 0;
+  color: #fff;
+}
+
+.section-bg::before {
+  content:"";
+  background: #1b1b1b;
+  position: absolute;
+  bottom: 60px;
+  top: 60px;
+  left: 0;
+  right: 0;
+  transform: skewY(-3deg);
+}
